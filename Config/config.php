@@ -14,7 +14,7 @@ return [
     'services' => [
         'other' => [
             'mautic.transport.mailgun' => [
-                'class' => \MauticPlugin\AFMailgunBundle\Swiftmailer\Transport\MailgunTransport::class,
+                'class' => \MauticPlugin\AMMailgunBundle\Swiftmailer\Transport\MailgunTransport::class,
                 'arguments' => [
                     'mautic.email.model.transport_callback',
                     '%mautic.mailer_host%',
