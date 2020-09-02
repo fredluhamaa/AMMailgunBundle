@@ -40,12 +40,10 @@ class MailgunTransport extends \Swift_SmtpTransport implements CallbackTransport
     /**
      * {@inheritdoc}
      */
-    public function __construct(TransportCallback $transportCallback, $host = 'smtp.eu.mailgun.org',  $username = null, $password = null, $sandboxMode = false, $sandboxMail = '', $port = 587)
+    public function __construct(TransportCallback $transportCallback, $sandboxMode = false, $sandboxMail = '')
     {
-        parent::__construct($host, $port, 'tls');
+        parent::__construct('smtp.eu.mailgun.org', 587, 'tls');
         $this->setAuthMode('login');
-        $this->setUsername($username);
-        $this->setPassword($password);
 
         $this->setSandboxMode($sandboxMode);
         $this->setSandboxMail($sandboxMail);
