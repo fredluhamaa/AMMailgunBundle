@@ -9,7 +9,7 @@
  * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
-namespace MauticPlugin\AFMailgunBundle\Swiftmailer\Transport;
+namespace MauticPlugin\AMMailgunBundle\Swiftmailer\Transport;
 
 use Mautic\CoreBundle\Helper\ArrayHelper;
 use Mautic\EmailBundle\Model\TransportCallback;
